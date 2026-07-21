@@ -51,13 +51,5 @@ develop
 
 Estrutura do Projeto
 
-landing-page/
-│
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── img/
-│   └── banner.png
-└── README.md
+
+
