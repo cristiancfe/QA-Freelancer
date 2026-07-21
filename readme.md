@@ -52,9 +52,7 @@ main
 
 develop
 
-Estrutura do Projeto
 
-<img width="159" height="205" alt="arvore" src="https://github.com/user-attachments/assets/5729f3f7-a1cd-4156-a56a-2ea51ce31ab8" />
 
 
 
