@@ -1,0 +1,98 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    }
+    
+    body{
+    
+    font-family:'Poppins',sans-serif;
+    background:#F4F7FC;
+    color:#333;
+    
+    }
+    
+    header{
+    
+    background:#0F4C81;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+    
+    }
+    
+    header h1{
+    
+    font-size:50px;
+    
+    }
+    
+    header p{
+    
+    margin:20px 0;
+    
+    }
+    
+    button{
+    
+    background:#00B894;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+    
+    }
+    
+    button:hover{
+    
+    background:#019875;
+    
+    }
+    
+    section{
+    
+    max-width:900px;
+    margin:auto;
+    padding:50px 20px;
+    
+    }
+    
+    h2{
+    
+    margin-bottom:20px;
+    color:#0F4C81;
+    
+    }
+    
+    input,
+    textarea{
+    
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #CCC;
+    border-radius:5px;
+    
+    }
+    
+    footer{
+    
+    background:#0F4C81;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    
+    }
+    
+    #resultadoCep{
+    
+    margin-top:20px;
+    font-weight:bold;
+    
+    }
