@@ -1,3 +1,4 @@
+- Link do Projeto - https://cristiancfe.github.io/QA-Freelancer/
 OBJETIVO: Desenvolver um site simples utilizando HTML, CSS e JavaScript.
 
 CONTEÚDO MÍNIMO DA LANDING PAGE:
