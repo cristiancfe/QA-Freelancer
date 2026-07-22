@@ -1,47 +1,73 @@
 const botao = document.getElementById("btnSaibaMais");
 
-botao.addEventListener("click", ()=>{
+if (botao) {
+    botao.addEventListener("click", () => {
+        window.location.href = "./saibamais.html";
+    });
+}
 
-alert("Obrigado pelo interesse! Em breve entraremos em contato.");
+const botao2 = document.getElementById("btnVoltar");
 
-});
+if (botao2) {
+    botao2.addEventListener("click", () => {
+        window.location.href = "./index.html";
+    });
+}
 
-document
-.getElementById("formContato")
-.addEventListener("submit",function(e){
+const form = document.getElementById("formContato");
 
-e.preventDefault();
+if (form) {
 
-alert("Mensagem enviada com sucesso!");
+    form.addEventListener("submit", function (e) {
 
-this.reset();
+        e.preventDefault();
 
-});
+        alert("Mensagem enviada com sucesso!");
 
-async function buscarCEP(){
+        this.reset();
 
-const cep=document.getElementById("cep").value;
-
-if(cep==""){
-
-return;
+    });
 
 }
 
-const resposta=await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+async function buscarCEP(){
 
-const dados=await resposta.json();
+    const cep = document
+        .getElementById("cep")
+        .value
+        .replace(/\D/g, "");
 
-document.getElementById("resultadoCep").innerHTML=`
+    if(cep.length != 8){
 
-<p><strong>Rua:</strong> ${dados.logradouro}</p>
+        alert("Digite um CEP válido.");
 
-<p><strong>Bairro:</strong> ${dados.bairro}</p>
+        return;
 
-<p><strong>Cidade:</strong> ${dados.localidade}</p>
+    }
 
-<p><strong>Estado:</strong> ${dados.uf}</p>
+    try{
 
-`;
+        const resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+
+        const dados = await resposta.json();
+
+        if(dados.erro){
+
+            alert("CEP não encontrado.");
+
+            return;
+
+        }
+
+        document.getElementById("rua").value = dados.logradouro;
+        document.getElementById("bairro").value = dados.bairro;
+        document.getElementById("cidade").value = dados.localidade;
+        document.getElementById("estado").value = dados.uf;
+
+    }catch{
+
+        alert("Erro ao consultar o CEP.");
+
+    }
 
 }

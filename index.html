@@ -37,68 +37,123 @@ Saiba Mais
 
 <p>
 
-Somos especialistas em Testes Manuais, Automação de Testes, API Testing,
-Cypress, Selenium e Robot Framework.
+<strong>Somos especialistas em Testes Manuais e Automação de Testes.</strong>
 
 </p>
-<p>
-
-Garantimos a qualidade de seu produto com as mais novas tecnologias de mercado<br>
-Entre em contato através do nosso formulário e vamos construir a aplicação que vai modernizar o seu negócio.
-
-</p>
-  
 
 </section>
+<section class="cards">
 
-<section class="cep">
+    <h2>Nossos Serviços de QA</h2>
 
-<h2>Consultar CEP</h2>
+    <div class="cards-container">
 
-<input
-type="text"
-id="cep"
-placeholder="Digite o CEP">
+        <div class="card">
 
-<button onclick="buscarCEP()">
+            <h3>🧪 Testes Manuais</h3>
 
-Buscar
+            <p>
+                Realizamos testes funcionais, exploratórios e de regressão para
+                identificar falhas antes que elas impactem o usuário final,
+                garantindo qualidade e confiabilidade em cada entrega.
+            </p>
 
-</button>
+        </div>
 
-<div id="resultadoCep"></div>
+        <div class="card">
+
+            <h3>🤖 Automação de Testes</h3>
+
+            <p>
+                Automatizamos cenários de testes utilizando Cypress, Selenium,
+                Robot Framework e outras ferramentas, reduzindo tempo de execução
+                e aumentando a cobertura dos testes.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🔗 Testes de API</h3>
+
+            <p>
+                Validamos APIs REST utilizando Postman e outras ferramentas,
+                verificando autenticação, contratos, performance e integridade
+                dos dados para garantir integrações seguras.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
 <section>
 
-<h2>Contato</h2>
+    <h2>Contato</h2>
 
-<form id="formContato">
+    <form id="formContato">
 
-<input
-type="text"
-placeholder="Nome"
-required>
+        <input
+            type="text"
+            placeholder="Nome"
+            required>
 
-<input
-type="email"
-placeholder="Email"
-required>
+        <input
+            type="email"
+            placeholder="Email"
+            required>
 
-<textarea
-placeholder="Mensagem"
-required>
+        <!-- CEP -->
+        <div class="cep-form">
 
-</textarea>
+            <input
+                type="text"
+                id="cep"
+                placeholder="Digite o CEP"
+                maxlength="9"
+                required>
 
-<button type="submit">
+            <button type="button" onclick="buscarCEP()">
+                Buscar CEP
+            </button>
 
-Enviar
+        </div>
 
-</button>
+        
+        <input
+            type="text"
+            id="rua"
+            placeholder="Rua"
+            readonly>
 
-</form>
+        <input
+            type="text"
+            id="bairro"
+            placeholder="Bairro"
+            readonly>
+
+        <input
+            type="text"
+            id="cidade"
+            placeholder="Cidade"
+            readonly>
+
+        <input
+            type="text"
+            id="estado"
+            placeholder="Estado"
+            readonly>
+
+        <textarea
+            placeholder="Mensagem"
+            required></textarea>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
 
 </section>
 
