@@ -1,42 +1,32 @@
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
-
     font-family: 'Poppins', sans-serif;
     background: #F4F7FC;
     color: #333;
-
 }
 
 header {
-
     background: #0F4C81;
     color: white;
     padding: 80px 20px;
     text-align: center;
-
 }
 
 header h1 {
-
     font-size: 50px;
-
 }
 
 header p {
-
     margin: 20px 0;
-
+    font-size: 18px;
 }
 
 button {
-
     background: #00B894;
     color: white;
     border: none;
@@ -45,93 +35,193 @@ button {
     cursor: pointer;
     font-size: 18px;
     transition: .3s;
-
 }
 
 button:hover {
-
     background: #019875;
-
 }
 
 section {
-
     max-width: 900px;
     margin: auto;
     padding: 50px 20px;
-
 }
 
 h2 {
-
     margin-bottom: 20px;
     color: #0F4C81;
-
 }
 
 input,
 textarea {
-
     width: 100%;
     padding: 15px;
     margin: 10px 0;
     border: 1px solid #CCC;
     border-radius: 5px;
-
+    font-size: 16px;
 }
 
 footer {
-
     background: #0F4C81;
     color: white;
     text-align: center;
     padding: 25px;
     margin-top: 40px;
-
 }
 
 #resultadoCep {
-
     margin-top: 20px;
     font-weight: bold;
-    
 }
 
-    .cards {
-        padding: 20px 0%;
-        background: #f5f7fa;
+.cards {
+    padding: 20px 0;
+    background: #f5f7fa;
+    text-align: center;
+}
+
+.cards h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(33.33% - 14px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
+}
+
+.card h3 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ===========================
+   TABLETS (até 992px)
+=========================== */
+
+@media (max-width: 992px) {
+
+    header {
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+    }
+
+}
+
+/* ===========================
+   CELULARES (até 768px)
+=========================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 50px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+
+    h2 {
+        font-size: 28px;
         text-align: center;
     }
 
-    .cards h2 {
-        margin-bottom: 20px;
-        font-size: 2rem;
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
     }
 
-    .cards-container{
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
     }
-    
-    .card{
-        width: calc(33.33% - 10px);
-        background: #fff;
-        border-radius: 12px;
-        padding: 25px;
-        box-sizing: border-box;
+
+    .card {
+        width: 100%;
     }
-    .card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
+
+    input,
+    textarea {
+        font-size: 16px;
+    }
+
+}
+
+/* ===========================
+   CELULARES PEQUENOS (até 480px)
+=========================== */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 20px;
     }
 
     .card h3 {
-        color: #0d6efd;
-        margin-bottom: 15px;
+        font-size: 20px;
     }
 
     .card p {
-        color: #555;
-        line-height: 1.7;
+        font-size: 15px;
     }
+
+    footer {
+        font-size: 14px;
+    }
+
+}
