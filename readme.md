@@ -1,4 +1,5 @@
-- Link do Projeto - https://cristiancfe.github.io/QA-Freelancer/
+- Link do Projeto - https://cristiancfe.github.io/QA-Freelancer
+- VERCEL -https://qa-freelancer.vercel.app/
   
 OBJETIVO: Desenvolver um site simples utilizando HTML, CSS e JavaScript.
 
